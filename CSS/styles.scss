@@ -1,0 +1,288 @@
+/*Variables*/
+
+$color-black: #0C0B0B;
+$color-white: #FCFCFC;
+$color-grey: #888888;
+
+
+* {
+	padding: 0%;
+	margin: 0%;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+section {
+	display: grid;
+	grid-template-columns: 1fr 7fr;
+	grid-template-rows: 1fr 3fr 3fr 1fr;
+	grid-template-areas: "header header" "Masvendidos productos" "Masvendidos productos" "footer footer";
+	column-gap: 50px;
+    a {
+        text-decoration: none;
+        color: $color-white;
+    }
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        grid-area: header;
+        background-color: black;
+        height: 210px;
+        
+        ul {
+            list-style: none;
+            text-align: center;
+            margin-left: 30px;
+            width: 200px;
+            background-color: black;
+            border: 3px;
+            border-style: ridge;
+            border-color: $color-white;
+            ul {
+                position: absolute;
+                display: none;
+                li {
+                    display: block;
+                }
+            }
+            &:hover ul {
+                display: block;
+            }
+        }
+        li {
+            display: inline-block;
+            position: relative;
+            font-size: 25px;
+            padding: 10px;
+            &:hover ul {
+                display: block;
+            }
+        }
+    }
+    .Masvendidos {
+        display: grid;
+        grid-area: Masvendidos;
+        background-color: $color-grey;
+        display: flex;
+        flex-direction: column;
+        h1 {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            font-size: xx-large;
+            background-color: $color-white;
+            width: 200px;
+            margin-left: 30px;
+        }
+    
+    .ofertas1 {
+        background-color: $color-white;
+        width: 120px;
+        height: 200px;
+        margin: 70px;
+        background-image: url(../Media/Oferta.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-color: $color-white;
+        border: 3px;
+        border-style: solid;
+        justify-content: center;
+        color: $color-black;
+        font-size: larger;
+        text-align: center;
+    }
+    .ofertas2 {
+        background-color: $color-white;
+        width: 120px;
+        height: 200px;
+        margin: 70px;
+        background-image: url(../Media/Oferta2.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-color: $color-white;
+        border: 3px;
+        border-style: solid;
+        justify-content: center;
+        color: $color-black;
+        font-size: larger;
+        text-align: center;
+    }
+    .ofertas3 {
+        background-color: $color-white;
+        width: 120px;
+        height: 200px;
+        margin: 70px;
+        background-image: url(../Media/Oferta3.jpg);
+        background-position-x: center;
+        background-position-y: center;
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-color: $color-white;
+        border: 3px;
+        border-style: solid;
+        justify-content: center;
+        color: black;
+        font-size: larger;
+        text-align: center;
+    }
+    }
+    
+    div {
+        display: flex;
+        grid-area: productos;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: center;
+        
+        
+        .productosremeras {
+            color: azure;
+            display: flex;
+            background-color: black;
+            justify-content: center;
+            width: 200px;
+            height: 300px;
+            margin: 30px;
+            margin-top: 100px;
+            background-image: url(../Media/remeraOS.jpg);
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-color: $color-white;
+            border: 3px;
+            border-style: solid;
+            justify-content: center;
+            color: black;
+            font-size: larger;
+        }
+        .productosbuzos {
+            color: $color-white;
+            column-gap: 50px;
+            background-color: black;
+            width: 200px;
+            height: 300px;
+            margin: 30px;
+            margin-top: 100px;
+            background-image: url(../Media/Hoodies.jpg);
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-size: 150px;
+            background-color: $color-white;
+            border: 3px;
+            border-style: solid;
+            justify-content: center;
+            color: $color-black;
+            font-size: larger;
+            text-align: center;
+        }
+        .productoscamperas {
+            color: $color-white;
+            column-gap: 50px;
+            background-color: $color-black;
+            width: 200px;
+            height: 300px;
+            margin: 30px;
+            margin-top: 100px;
+            background-image: url(../Media/Camperas.jpg);
+            background-position-x: center;
+            background-position-y: center;
+            background-repeat: no-repeat;
+            background-size: 200px;
+            background-color: $color-white;
+            border: 3px;
+            border-style: solid;
+            justify-content: center;
+            color: black;
+            font-size: larger;
+            text-align: center;
+        }
+        
+    }
+    
+    footer {
+        background-color: $color-black;
+        display: flex;
+        grid-area: footer;
+        color: $color-white;
+        flex-direction: row;
+        justify-content: space-around;
+        a {
+            margin-top: 100px;
+            font-size: 20px;
+        }
+    }
+    .productosespecificos {
+        display: grid;
+        grid-template-columns: 1fr 7fr;
+        grid-template-rows: 1fr 3fr 3fr 1fr;
+        grid-template-areas: "header header" "productos productos" "productos productos" "footer footer";
+        column-gap: 50px;
+    }
+    
+    }
+    .sobrenosotros {
+        display: grid;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 1fr 5fr 1fr;
+        grid-template-areas: "aside body" "aside body" "footer footer";
+        .preguntasfrecuentes {
+            grid-area: aside;
+            background-color: $color-grey;
+            height: 2700px;
+            display: flex;
+            flex-direction: column;
+            font-size: large;
+            align-items: center;
+            }
+            p {
+                margin-top: 70px;
+            }
+            img {
+                width: 200px;
+                align-self: center;
+                margin-top: 30px;
+            }
+        
+        
+        #info {
+            margin-top: 200px;
+            font-size: larger;
+            width: 800px;
+            display: flex;
+            align-self: center;
+            justify-self: center;
+        }
+        .piedepagina {
+            grid-area: footer;
+            background-color: black;
+            display: flex;
+            width: 1920px;
+            color: $color-white;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        button {
+            width: 100px;
+        }
+    
+    .piedepagina {
+        grid-area: footer;
+        background-color: $color-black;
+        display: flex;
+        width: 1920px;
+        color: $color-white;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    button {
+        width: 100px;
+    }
+}
